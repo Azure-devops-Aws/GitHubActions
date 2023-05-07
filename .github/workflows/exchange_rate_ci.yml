@@ -30,7 +30,7 @@ jobs:
         cd 'T9/Exchange rate'
         export PYTHONPATH="${PYTHONPATH}:$(pwd)"
         pytest tests/ -v
-      - name: Install SonarQube scanner
+    - name: Install SonarQube scanner
       run: |
         wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
         unzip sonar-scanner-cli-4.6.2.2472-linux.zip
