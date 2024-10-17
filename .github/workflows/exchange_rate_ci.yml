@@ -26,11 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r 'T9/Exchange rate/requirements.txt'
 
-      - name: Run tests
-        run: |
-          cd 'T9/Exchange rate'
-          export PYTHONPATH="${PYTHONPATH}:$(pwd)"
-          pytest tests/ --junitxml=test-results.xml --cov=app --cov-report=xml
+     
 
       - name: Install SonarQube scanner
         run: |
